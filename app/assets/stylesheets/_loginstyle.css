@@ -9,38 +9,38 @@
     /*content:url('/assets/imageedit_1_7228915002.gif' ) !important;*/
 }
   label{
-    margin-left: 1000px;
+    margin-left: 500px;
     width: 300px;
     display: block;
     color: black; 
     font-size: 20px;
   }
   input[type="text"]{
-    margin-left: 1000px;
+    margin-left: 500px;
     width: 250px;
   }
   input[type="email"]{
-    margin-left: 1000px;
+    margin-left: 500px;
     width: 250px;
   }
   input[type="password"]{
-    margin-left: 1000px;
+    margin-left: 500px;
     width: 250px;
   }
 
   input[type="file"]{
-    margin-left: 1000px;
+    margin-left: 500px;
     width: 250px;
   }
   input[type="checkbox"]{
-    margin-left: 1000px;
+    margin-left: 500px;
   }
   input[type="submit"]{
-    margin-left: 1000px;
+    margin-left: 500px;
   }
   em{
-    margin-left: 1000px;
+    margin-left: 500px;
   }
   p{
-    margin-left: 1000px;
+    margin-left: 500px;
   }
