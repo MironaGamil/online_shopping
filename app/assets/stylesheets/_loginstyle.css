@@ -1,0 +1,46 @@
+  body{
+    background-color: #FFB6C1 !important ;
+  }
+  img {
+    height: 660;
+    width: 400;
+    float: left;
+    text-align: center;
+    /*content:url('/assets/imageedit_1_7228915002.gif' ) !important;*/
+}
+  label{
+    margin-left: 1000px;
+    width: 300px;
+    display: block;
+    color: black; 
+    font-size: 20px;
+  }
+  input[type="text"]{
+    margin-left: 1000px;
+    width: 250px;
+  }
+  input[type="email"]{
+    margin-left: 1000px;
+    width: 250px;
+  }
+  input[type="password"]{
+    margin-left: 1000px;
+    width: 250px;
+  }
+
+  input[type="file"]{
+    margin-left: 1000px;
+    width: 250px;
+  }
+  input[type="checkbox"]{
+    margin-left: 1000px;
+  }
+  input[type="submit"]{
+    margin-left: 1000px;
+  }
+  em{
+    margin-left: 1000px;
+  }
+  p{
+    margin-left: 1000px;
+  }

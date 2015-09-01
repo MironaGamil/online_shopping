@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OnlineShopping</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<li class="dropdown">
+  <h3><a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <span class="caret"></span></a></h3>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <h3><%= link_to 'All', root_path %></h3>
+    </li>
+    <% Category.order('name ASC').each do |category| %>
+      <li>
+      <h3><%= link_to category.name, category %></h3>
+      </li>
+    <% end %>
+  </ul>
+</li>
+	<% if user_signed_in? %>
+		<% if current_user.first_name =="edmr" && current_user.last_name =="admin" %>
+    		<h1 style="color: red" > admin </h1>
+    	<%else%>
+	    	      <% if current_user.image.exists? %>
+        <%= image_tag current_user.image.url( :thumb) %> 
+        <%else%>
+       
+        <%end%>
+	  		<h1 style="color: red" > Hi,  <%= current_user.first_name  %> <%= current_user.last_name  %></h1>
+	  		<h3><%= link_to "Edit", edit_user_registration_path %><br></h3>
+ 		<%end%>
+
+  		<h3><%= link_to "Sign out", destroy_user_session_path, method: :delete %></h3>
+			
+
+	<% else %>
+		<h3 style="margin-left: 1000px;"><%= link_to "Sign up", new_user_registration_path %> or
+		<%= link_to "log in", new_user_session_path %></h3>
+
+<hr>
+<%end%>
+<%= yield %>
+
+</body>
+</html>
